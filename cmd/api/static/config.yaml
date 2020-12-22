@@ -1,0 +1,11 @@
+database:
+  dbdriver: "mysql"
+  dbname: "DATABASE_NAME"
+  username: "DATABASE_USERNAME"
+  password: "DATABASE_PASSWORD"
+  host: "localhost"
+  port: "1433"
+  logmode: true
+
+server:
+  port: "8080"
