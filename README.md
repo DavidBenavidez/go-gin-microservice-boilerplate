@@ -1,17 +1,11 @@
-Golang chi gorm boilerplate
+# Golang Chi Mysql boilerplate
 
-Version
-1.0.0
-
-Requirements
+# Requirements
 GO 1.15
 Docker
 
-Database Tables
-PROJECT
-
-Build
+# Build
 `$ go build ./cmd/api/`
 
-Run
+# Run
 `go run ./cmd/api`
