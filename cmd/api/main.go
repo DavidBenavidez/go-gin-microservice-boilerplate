@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/davidbenavidez/chi-gorm/internal/config"
-	"github.com/davidbenavidez/chi-gorm/internal/log"
+	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/config"
+	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/log"
 )
 
 func main() {

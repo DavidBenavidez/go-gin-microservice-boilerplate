@@ -3,8 +3,8 @@ package config
 import (
 	"net/http"
 
-	"github.com/davidbenavidez/chi-gorm/internal/log"
-	"github.com/davidbenavidez/chi-gorm/internal/project"
+	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/log"
+	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/project"
 	"github.com/go-chi/chi"
 	"github.com/jinzhu/gorm"
 	"github.com/spf13/viper"
