@@ -1,4 +1,4 @@
-module github.com/davidbenavidez/chi-gorm
+module github.com/davidbenavidez/go-chi-mysql-boilerplate
 
 go 1.15
 

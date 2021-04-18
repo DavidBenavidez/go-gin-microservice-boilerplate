@@ -2,7 +2,7 @@ package config
 
 import (
 	"github.com/davidbenavidez/chi-gorm/internal/log"
-	. "github.com/davidbenavidez/chi-gorm/internal/project"
+	"github.com/davidbenavidez/chi-gorm/internal/project"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
@@ -12,31 +12,16 @@ type DBConfiguration struct {
 	LogMode                                          bool
 }
 
-func (s *Server) setupDatabase(config DBConfiguration) (*gorm.DB, error) {
-	dbconfig := makeDBConfig(config)
-
+func (s *Server) setupDatabase(dbconfig DBConfiguration) (*gorm.DB, error) {
 	db, err := connectToDatabase(dbconfig)
 
 	db.SingularTable(true)
 
 	// Optional: Create tables
-	db.DropTable(&Project{})
-	db.CreateTable(&Project{})
+	db.DropTable(&project.Project{})
+	db.CreateTable(&project.Project{})
 
 	return db, err
-}
-
-func makeDBConfig(config DBConfiguration) DBConfiguration {
-	dbConfig := DBConfiguration{
-		Username: config.Username,
-		Password: config.Password,
-		Host:     config.Host,
-		Port:     config.Port,
-		DBName:   config.DBName,
-		LogMode:  config.LogMode,
-	}
-
-	return dbConfig
 }
 
 func connectToDatabase(config DBConfiguration) (*gorm.DB, error) {

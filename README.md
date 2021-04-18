@@ -8,4 +8,5 @@ Docker
 `$ go build ./cmd/api/`
 
 # Run
-`go run ./cmd/api`
+`cd ./cmd/api`
+`go run .`

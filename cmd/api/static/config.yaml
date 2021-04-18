@@ -1,10 +1,10 @@
 database:
   dbdriver: "mysql"
-  dbname: "DATABASE_NAME"
-  username: "DATABASE_USERNAME"
-  password: "DATABASE_PASSWORD"
+  dbname: "sample"
+  username: "root"
+  password: ""
   host: "localhost"
-  port: "1433"
+  port: "3306"
   logmode: true
 
 server:
