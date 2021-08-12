@@ -1,10 +1,10 @@
 package config
 
 import (
-	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/log"
 	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/project"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	log "github.com/sirupsen/logrus"
 )
 
 type DBConfiguration struct {

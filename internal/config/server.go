@@ -3,10 +3,10 @@ package config
 import (
 	"net/http"
 
-	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/log"
 	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/project"
 	"github.com/go-chi/chi"
 	"github.com/jinzhu/gorm"
+	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"
 )
 

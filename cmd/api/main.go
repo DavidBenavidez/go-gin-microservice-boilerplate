@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/config"
-	"github.com/davidbenavidez/go-chi-mysql-boilerplate/internal/log"
+	log "github.com/sirupsen/logrus"
 )
 
 func main() {
