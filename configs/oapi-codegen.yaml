@@ -1,0 +1,4 @@
+package: sampleClient
+generate:
+  client: true
+  models: true

@@ -1,0 +1,4 @@
+image:
+  tag: "1.0.0"
+  registry: someDockerRepo
+  repo: go-gin-microservice-boilerplate
